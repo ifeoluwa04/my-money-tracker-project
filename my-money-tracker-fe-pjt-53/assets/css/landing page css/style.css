@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* WHOLE CONTAINER */
+.container{
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color:#1F2329;
+    font-size: 1.1em;
+}
+
+/* _____Nav section_____ come back to this LATER concerning grid/flexbox*/
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    
+    margin:1em 2em 0;
+}
+
+.logo>img{
+    width:5.8em; 
+}
+a{
+    text-decoration: none;
+    color:#1F2329;
+}
+.nav-links{
+    margin-top: 0.5em;
+}
+.nav-links>a{
+    margin:0 0.6em;
+    transition-property: font-size;
+    transition-duration:0.5s ;
+}
+.nav-links>a:hover{
+    font-size: 20px;
+}
+
+.login{
+    border: 2px solid #034AB3;
+    box-sizing: border-box;
+    border-radius: 8px;
+    align-items: center;
+    padding: 12px 16px;
+   transition-property: background-color;
+   transition-duration: 1s;
+}
+.login:hover{
+    color: white;
+    background-color: #034AB3 ;
+}
+.signup{
+    background: #034AB3;
+    border-radius: 8px;
+    align-items: center;
+    padding: 12px 16px;
+    margin-left: 1em;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 1s;
+ 
+}
+.signup:hover{
+    color:#1F2329;
+    background-color: white;
+    border:2px solid #034AB3;
+}
+
+.menu{
+    display: none;
+}
+
+
+/* NEW NAV SECTION */
+.newnav{
+    display: none;
+   
+}
+
+
+
+
+/* *************** MAIN SECTION ************************* */
+/* *********HERO SECTION********** */
+.hero-mobile{
+    display: none;
+}
+
+ .hero{
+    padding-top: 2em;
+    display: flex;
+    justify-content:space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.hero>section{
+    width: 100%;
+}
+
+
+.h1-p>h1{
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 130.9%;
+    padding:0;
+    margin:0;
+}
+
+.h1-p>h1>span{
+    color: #8CE590;
+}
+.h1-p>p{
+    line-height: 1.7em;
+}
+.btn-submitapp{
+    display:grid;
+    grid-template-columns: auto;
+     justify-content: center;
+     grid-row-gap: 1em;
+}
+
+.btn-submitapp>a{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.btn-submit{
+    background: #034AB3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #FFFFFF;
+    border: thin;
+    transition-property: background-color, color;
+    transition-duration: 2s;  
+}
+
+.btn-submit:hover{
+    background-color: #87a6e8;
+    color:#ffffff;
+   
+}
+
+.app{
+display: grid;
+grid-template-columns: auto auto;
+grid-column-gap: 1em;
+justify-content: center;
+
+}
+
+
+.appstore,.playstore{
+        display:flex;
+        align-items: center;
+
+    }
+
+    .app>a>button{
+        color: #F9F9F9;
+        font-size: 18px;
+        line-height: 22px;
+        background: #212121;
+        border-radius: 8px;
+        height: 68px;
+        border: thin;
+        transition-property: background-color;
+        transition-duration: 1s;
+        
+    }
+
+    .app>a>button:hover{
+        background-color: rgb(164, 167, 170);
+        }
+
+/* HOW IT WORKS SECTION */
+
+.how-it-works{
+    display: none;
+}
+
+.frame-5{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.frame-5>img{
+    height: 100%;
+    width: 100%;
+}
+
+/* WHY US SECTION */
+
+.why-us{
+    margin-top: auto;
+}
+.why-us>h2{
+    text-align: center;
+    margin: 3em 0;
+    font-size: 18px;
+}
+.tob{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+
+}
+
+.transactions,.overview,.backup{
+    width: 15em;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8px;
+    position:relative;
+    padding:2em 0 2em;
+}
+
+.transactions,.backup{
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(33, 33, 33, 0.25);
+}
+.overview{
+    background: #8CE590;
+}
+
+.quick>h3{
+    color: #2F73DA;
+}
+
+.grp57,.grp58,.grp59{
+    position: absolute;
+    left:1.5em;
+    bottom:12em;
+}
+
+
+
+/* _____HAPPY USERS SECTION_____ */
+
+.happy-users{
+margin-top:7em;
+
+}
+
+.happy-users>h2{
+   text-align: center;
+   margin-bottom: 1em;
+}
+.testimonial-stars{
+    border-radius: 8px;
+    filter: drop-shadow(0px 8px 16px rgba(33, 33, 33, 0.25)); 
+    box-shadow: 0px 8px 16px -2px rgba(33, 33, 33, 0.25);
+    width: 75%;
+    margin: 0 auto;
+}
+
+.testimonial{
+    background: linear-gradient(96.02deg, #165ECC 32.74%, #8CE590 87.97%);
+    border-radius: 8px;
+    position: relative;
+    color: #F9F9F9; 
+    height:16.2em;
+}
+
+.testimonial-contents{
+     padding-top: 2em;
+}
+
+.testimonial-contents>h3{
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.testimonial-contents>h3,.testimonial-contents>p{
+    text-align: center;
+}
+
+.testimonial-contents>p{
+    width: 65%;
+    font-size: 85%;
+    margin: 0 auto;
+}
+
+.testimonial-contents>img{
+    position:absolute;
+}
+
+.leftquote1{
+    left:7%;
+    top:3.5em;
+    }
+    .leftquote2{
+        right: 10%;
+        bottom:4em;
+    }
+.grp68{
+    left:44%;
+    top:13.5em;
+}
+
+.stars{
+    display: flex;
+    justify-content:center;
+    margin-top:4em;
+    padding-bottom: 3em;
+}
+.stars>img{
+    margin:1%;
+}
+
+.shapes{
+    display: flex;
+    justify-content: center;
+    margin:2em 0;
+}
+.shapes>a{
+    padding:1em 0.5em;
+}
+
+/*  PRICINGS  */
+.pricing{
+    padding-bottom: 4em;
+}
+.pricing>h2{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.free-standard{
+    display: flex;
+    justify-content: space-around;
+}
+
+.free,.standard{
+    background: #F9F9F9;
+    box-shadow: 0px 8px 16px -2px rgba(47, 115, 218, 0.25);
+    border-radius: 10px;
+    text-align: center;
+    padding-bottom:7em;
+}
+
+.free>h3,.standard>h3{
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    margin-top: 2em;
+}
+
+.free>h3{
+   
+    color: #165ECC;
+    
+}
+
+.free>p,.standard>p{
+    width:75%;
+    margin: 0 auto;
+}
+.free>section>span,.standard>section>span{
+    font-weight: bold;
+    font-size: 61px;
+    color:#1F2329; /*Leave it*/
+}
+.free>section,.standard>section{
+    color: #6A7381; /*Leave it*/
+    margin: 3em 0;
+}
+.free>button,.standard>button{
+    align-items: center;
+    padding: 12px 1em;
+    border-radius: 8px;
+    border: thin;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    width: 12.5em;
+}
+.free>button{
+    background: #034AB3;
+}
+.standard>button{
+    background: #52D858;
+}
+.acct,.remind{
+    display: block;
+    margin-top: 1em;
+}
+.acct>img{
+    margin-right: 1em;
+}
+
+.remind>img{
+margin-right: 0.5em;
+}
+
+.footer-socials{
+    background: #034AB3;
+    color: white;
+}
+
+
+/* FOOTER SECTION */
+.footer{
+   
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    padding-top: 5em;
+}
+
+.contact-us>h3{
+    padding-bottom: 1em;
+}
+.contact-us>ul, .info>ul, .help-link>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.info>ul>li,.help-link>ul>li{
+    margin-bottom: 1em;
+}
+
+.number,.email{
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+.number{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    grid-column-gap: 1em;
+    justify-content: left;
+}
+
+
+.email{
+grid-column-gap: 1em;
+}
+
+
+.sub-btn>a{
+    padding: 0.8em 2em;
+    color: #F9F9F9;
+    border-radius: 8px;
+    background: rgba(131, 178, 248, 0.34);
+    margin-left: 14%;
+    transition-property: background-color;
+    transition-duration: 2s;
+}
+
+.sub-btn>a:hover{
+    background: rgba(252, 252, 252, 0.34);
+}
+
+form{
+    display: grid;
+    grid-row-gap: 2em;
+    position: relative;
+}
+
+form>input{
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 1em 10%;
+     border: thin;
+}
+
+form>input[placeholder]{
+    text-align: center;
+}
+
+.email-2{
+    position: absolute;
+    top:8%;
+    left:0.7em;
+}
+
+.info a,.help-link a, .socials a{
+    color: white;
+}
+
+.top>a{
+    position: relative;
+    margin-left: 90%;  
+}
+
+.go-to-top{
+    position: absolute;
+    bottom:1.2em;
+    left: 0.6em;
+}
+
+
+
+.socials{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: 40%;
+    margin-top: 3em;
+}
+
+
+
+.socials ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1em;
+}
+
+.socials li{
+    list-style-type: none;
+    position: relative;
+}
+
+ .twitter-icon,.facebook-icon,.instagram-icon{
+  position: absolute;
+   
+}
+
+.facebook-icon{
+    left:0.9em;
+    bottom: 0.7em;
+}
+
+.twitter-icon{
+    left:0.5em;
+    bottom: 0.8em;
+}
+
+.instagram-icon{
+    left:0.5em;
+    bottom: 0.7em;
+}
